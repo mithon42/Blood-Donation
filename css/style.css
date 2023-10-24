@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* All Variables */
+:root {
+  --primaryColor: #333333;
+  --secondaryColor: #999999;
+  --brandColor: #dd3333;
+  --hoverColor: #aa0410;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --bodyColor: #DDDDDD;
+  --smallFontSize: 1.3rem;
+  --titleFontSize: 3.5rem;
+  --iconSize: 3rem;
+  --poppinsFonts: "Poppins", sans-serif;
+  --letterSpacing-1: 0.1rem;
+  --shadowSmall: 0.2rem 0.2rem 0.5rem red;
+  --thin: 100;
+  --extraLight: 200;
+  --light: 300;
+  --regular: 400;
+  --mediam: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+  --black: 900;
+}
+
+/* ############### Common Style Start ################# */
+html {
+  font-size: 62.5%;
+  font-family: var(--poppinsFonts);
+  /* 
+  PX to REM
+    1px == 0.1rem
+    Exp: 
+      font-size: 16px;
+        font-size: 1.6rem; 
+  */
+}
+
+body{
+  background: var(--bodyColor);
+}
+
+.container{
+  width: 118rem;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+/* ############### Common Style Ends ################# */
+
+
+/* ############### Header Style Start ################# */
+header{
+  background: var(--brandColor);
+}
+#navbar {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .logo {
+}
+
+.logo a{
+  
+}
+
+.logo a img{
+  width: 6.5rem;
+}
+
+/* menu */
+#navbar .menu {
+}
+
+.menu ul.menu-lists {
+  display: flex;
+  gap: 2.5rem
+}
+
+.menu-lists li.menu-list-item {
+  font-size: 1.8rem;
+  font-weight: var(--regular);
+  text-transform: capitalize;
+}
+
+.menu-list-item a.menu-list-link {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+a.menu-list-link:hover{
+  color: var(--secondaryColor);
+  text-shadow: 2px 2px 5px var(--hoverColor);
+}
+/* ############### Header Style Ends ################# */
+
+/* ############### Copyright Style Start ################# */
+.copyright{
+  margin-top: 2rem;
+}
+
+.copyright .copyright-text {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  text-transform: capitalize;
+  color: var(--whiteColor);
+  background-color: var(--blackColor);
+  letter-spacing: var(--letterSpacing-1);
+  font-family: var(--poppinsFonts);
+  font-size: var(--smallFontSize);
+  font-weight: var(--light);
+}
+
+.copyright-text a.link {
+  color: var(--brandColor);
+  font-weight: var(--mediam);
+  text-decoration: none;
+}
+
+.copyright-text a.link:hover {
+  text-shadow: var(--shadowSmall);
+}
+
+.copyright-text a.link:active {
+  color: var(--hoverColor);
+}
+/* ############### Copyright Style Ends ################# */
