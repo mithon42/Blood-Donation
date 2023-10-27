@@ -1,4 +1,88 @@
+Sections:
+01. Header/navbar = https://pixner.net/mosto/money-transfer/index.html = complated
+
+02. Banner =  https://pixner.net/mosto/money-transfer/index.html = raning
+
+03. Services = Blood Donate 
+
+04. Features = 
+
+05. Simple & Beautiful Interface =  https://theme-land.com/sapp/demo/index.html
+
+06. Uses = 
+
+07. Counter = https://codeytech.com/site-templates/applify/demo-hero-slider.html
+
+08. Testimonial = 
+
+09. Our Team = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvbokQWipablp2vlFV1rS-sBZe6oAPDhLK5hS5Ia97YSnuAN4b6E21HQzuA9BQwyBsM8&usqp=CAU
+
+10. Footer = https://quomodosoft.com/html/appie/assets/appie-demo/?fbclid=IwAR0DiKHFIPdB8Gd0wkcmBz7S8sLGXGrGWXFM5MfSamg-ebsq7yyuJ0U-3VY
+https://dribbble.com/shots/8230009-Blood-donate-landing-page-design/attachments/598317?mode=media = raning
+ 
+11. Copyright = Complated
+
+12. Error = https://theme-land.com/sapp/demo/index-2.html
+
+
+Banner Content:
+01. Logo 
+02. Menu
+03. Banner Text
+04. Button
+05. Banner Image
+06. Social Icon (Optional)
+
+
+Logo:
+01. Typographic - 30-35px (Height)
+02. Iconic - 60-70px (Height)
+
+
+Text:
+01. Menu - 16-20px
+02. Button - 20px
+03. Banner Text - 60-120px
+04. Paragraph - 16px (Line Height: 24px/26px)
+05. Icon - 20px
+06. Section Title - 32px
+07. Section Content Title - 24px
+
+
+Color:
+01. red- #A41214
+02. White - #FCFCFC
+03. Black - #070603
+04. Brand Color - #8A0302
+
+Space & Allignment:
+01. Section to Section Gap - 80/100/120px
+02. Inner Section Gap - 40/50/60px (Large Device)
+03. Inner Section Gap - 20/25/30px (Small Device)
+04. Inner Section Gap - 10/15/15px (Extra Small Device)
+
+Icon:
+=>FontAwesome
+
+Images
+=> Pexels
+=> Pixabay
+=> Unsplash
+=> Freepick
+
+
+
+
+
+
+
 https://preview.themeforest.net/item/blood-donation-activism-campaign-html5-template/full_screen_preview/19767842?_ga=2.151611961.1685541068.1698043275-1130177940.1697208898&_gac=1.89268969.1698043275.CjwKCAjwkNOpBhBEEiwAb3MvvQHU9USaqfaIkDtUSLEoUGjm_Rwn-ovekCcmrkFQo4ec_dCJb6Xu5hoC7kUQAvD_BwE
 
 
 scoll navbar item auto select https://www.youtube.com/watch?v=UoE1hqfpXX0
+
+
+
+git remote add origin https://github.com/mithon42/Blood-Donation.git
+git branch -M main
+git push -u origin main

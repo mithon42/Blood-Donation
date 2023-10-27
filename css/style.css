@@ -2,15 +2,10 @@
 
 /* All Variables */
 :root {
-  --primaryColor: #333333;
-  --secondaryColor: #999999;
-  --brandColor: #dd3333;
-  --hoverColor: #aa0410;
-  --whiteColor: #ffffff;
-  --blackColor: #000000;
-  --bodyColor: #DDDDDD;
-  --smallFontSize: 1.3rem;
-  --titleFontSize: 3.5rem;
+  --brandColor: #A41214;
+  --primaryColor: #8A0302;
+  --blackColor: #070603;
+  --whiteColor: #FCFCFC;
   --iconSize: 3rem;
   --poppinsFonts: "Poppins", sans-serif;
   --letterSpacing-1: 0.1rem;
@@ -24,6 +19,9 @@
   --bold: 700;
   --extraBold: 800;
   --black: 900;
+  --footerTitle: 2.5rem;
+  --footerIcon: 2rem;
+  --footerLogoSize: 4rem;
 }
 
 /* ############### Common Style Start ################# */
@@ -40,23 +38,20 @@ html {
 }
 
 body{
-  background: var(--bodyColor);
+  background: #d8d8d8;
 }
 
-.container{
-  width: 118rem;
-  margin: 0 auto;
+select{
+  padding: 8rem 0;
 }
 
-.flex{
-  display: flex;
-}
 /* ############### Common Style Ends ################# */
 
 
 /* ############### Header Style Start ################# */
 header{
   background: var(--brandColor);
+  width: 100%;
 }
 #navbar {
   height: 7rem;
@@ -96,40 +91,99 @@ header{
   text-decoration: none;
 }
 
-a.menu-list-link:hover{
-  color: var(--secondaryColor);
-  text-shadow: 2px 2px 5px var(--hoverColor);
+/* toggle button */
+.toggle span#toggleOpenBtn{
+  font-size: 3rem;
+  color: var(--whiteColor);
+  cursor: pointer;
 }
+
+.toggle span#toggleCloseBtn{
+  display: none;
+  font-size: 3rem;
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+
 /* ############### Header Style Ends ################# */
 
-/* ############### Copyright Style Start ################# */
-.copyright{
-  margin-top: 2rem;
+
+
+
+
+/* ================= Footer Start ================= */
+#footer{
+  padding: 4rem 0;
+  border-bottom: 0.2rem solid var(--blackColor)
 }
 
-.copyright .copyright-text {
-  text-align: center;
-  padding: 1rem 0.5rem;
-  text-transform: capitalize;
-  color: var(--whiteColor);
-  background-color: var(--blackColor);
-  letter-spacing: var(--letterSpacing-1);
+#footer .footer-title{
+  color: var(--blackColor);
   font-family: var(--poppinsFonts);
-  font-size: var(--smallFontSize);
-  font-weight: var(--light);
+  font-size: var(--footerTitle);
+  font-weight: var(--semiBold);
 }
 
-.copyright-text a.link {
+#footer .footer-logo img{
+  width: var(--footerLogoSize);
+}
+
+#footer .footer-logo .footer-btn{
+  width: fit-content;
+  color: var(--blackColor);
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+}
+
+#footer .footer-logo .footer-btn:hover{
   color: var(--brandColor);
-  font-weight: var(--mediam);
-  text-decoration: none;
 }
 
-.copyright-text a.link:hover {
-  text-shadow: var(--shadowSmall);
+#footer .footer-icon{
+  font-size: var(--footerIcon);
+  color: var(--blackColor);
 }
 
-.copyright-text a.link:active {
-  color: var(--hoverColor);
+#footer .company a.link:hover,
+#footer .support a.link:hover{
+  color: var(--brandColor);
 }
-/* ############### Copyright Style Ends ################# */
+
+#footer .footer-logo .info,
+#footer .company a.link,
+#footer .support a.link,
+.get-in-touch ul li span.mail,
+.get-in-touch ul li span.phone,
+.get-in-touch ul li span.address{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+  color: var(--blackColor);
+  letter-spacing: 0.1rem;
+}
+/* ================= Footer Ends ================= */
+
+/* ================= Copyright Start ================= */
+.copyright{
+  background: #bfc0be;
+  border-top: 0.1rem solid var(--whiteColor);
+}
+
+.copyright .copyright-btn{
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  background: var(--whiteColor);
+  color: var(--blackColor);
+}
+.copyright .copyright-btn .btn-icon{
+  font-size: 2rem
+}
+
+.copyright .copyright-text p{
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+.copyright .copyright-text span{
+  color: var(--brandColor);
+}
+/* ================= Copyright Ends ================= */
+
