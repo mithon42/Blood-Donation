@@ -41,7 +41,7 @@ body{
   background: #d8d8d8;
 }
 
-select{
+section{
   padding: 8rem 0;
 }
 
@@ -111,6 +111,27 @@ header{
 
 
 
+/* ================= Counter Start ================= */
+#counter{
+  background: linear-gradient(rgba(255, 0, 0, 0.50), rgba(255, 0, 0, 0.50)), url(../images/counter-bg.jpg) no-repeat center;
+  background-size: cover;
+  color: var(--whiteColor);
+}
+
+#counter .counter-icon{
+  font-size: 5rem;
+}
+
+#counter p{
+  font-size: 2.5rem;
+}
+
+#counter .counter-number{
+  font-size: 3rem;
+  font-weight: var(--regular);
+}
+/* ================= Counter Ends ================= */
+
 /* ================= Footer Start ================= */
 #footer{
   padding: 4rem 0;
@@ -174,6 +195,7 @@ header{
   background: var(--whiteColor);
   color: var(--blackColor);
 }
+
 .copyright .copyright-btn .btn-icon{
   font-size: 2rem
 }
@@ -182,8 +204,8 @@ header{
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
 }
+
 .copyright .copyright-text span{
   color: var(--brandColor);
 }
 /* ================= Copyright Ends ================= */
-

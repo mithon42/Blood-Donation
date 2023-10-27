@@ -1,5 +1,5 @@
 Sections:
-01. Header/navbar = https://pixner.net/mosto/money-transfer/index.html = complated
+01. Header/navbar = https://pixner.net/mosto/money-transfer/index.html = raning
 
 02. Banner =  https://pixner.net/mosto/money-transfer/index.html = raning
 
@@ -11,14 +11,13 @@ Sections:
 
 06. Uses = 
 
-07. Counter = https://codeytech.com/site-templates/applify/demo-hero-slider.html
+07. Counter = https://codeytech.com/site-templates/applify/demo-hero-slider.html = code https://codepen.io/Amaik/pen/ExaaLgE?editors=1010
 
 08. Testimonial = 
 
-09. Our Team = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvbokQWipablp2vlFV1rS-sBZe6oAPDhLK5hS5Ia97YSnuAN4b6E21HQzuA9BQwyBsM8&usqp=CAU
+09. Our Team = raning = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvbokQWipablp2vlFV1rS-sBZe6oAPDhLK5hS5Ia97YSnuAN4b6E21HQzuA9BQwyBsM8&usqp=CAU
 
-10. Footer = https://quomodosoft.com/html/appie/assets/appie-demo/?fbclid=IwAR0DiKHFIPdB8Gd0wkcmBz7S8sLGXGrGWXFM5MfSamg-ebsq7yyuJ0U-3VY
-https://dribbble.com/shots/8230009-Blood-donate-landing-page-design/attachments/598317?mode=media = raning
+10. Footer = complated
  
 11. Copyright = Complated
 
