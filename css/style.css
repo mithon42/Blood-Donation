@@ -233,6 +233,31 @@ header{
 }
 /* ================= Our Team Section Ends ================= */
 
+/* ================= Contact Section Start ================= */
+#contact{
+  
+}
+
+#contact form label{
+  font-size: 2rem;
+}
+
+#contact form input,
+#contact form textarea{
+  font-size: 1.4rem;
+}
+
+#contact form input:focus,
+#contact form textarea:focus{
+  outline-color: var(--brandColor);
+}
+
+#contact form textarea{
+  resize: none;
+}
+
+/* ================= Contact Section Ends ================= */
+
 /* ================= Footer Start ================= */
 #footer{
   padding: 4rem 0;
