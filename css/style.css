@@ -24,7 +24,7 @@
   --footerLogoSize: 4rem;
 }
 
-/* ############### Common Style Start ################# */
+/* ================= Common Style Start ================= */
 html {
   font-size: 62.5%;
   font-family: var(--poppinsFonts);
@@ -45,10 +45,18 @@ section{
   padding: 8rem 0;
 }
 
-/* ############### Common Style Ends ################# */
+.section-title{
+}
+
+.section-main-title{
+  font-size: 3.5rem;
+  font-weight: var(--bold);
+  user-select: none;
+}
+/* ================= Common Style Ends ================= */
 
 
-/* ############### Header Style Start ################# */
+/* ================= Header Style Start ================= */
 header{
   background: var(--brandColor);
   width: 100%;
@@ -105,13 +113,13 @@ header{
   cursor: pointer;
 }
 
-/* ############### Header Style Ends ################# */
+/* ================ Header Style Ends ================ */
 
 
 
 
 
-/* ================= Counter Start ================= */
+/* ================= Counter Section Start ================= */
 #counter{
   background: linear-gradient(rgba(255, 0, 0, 0.50), rgba(255, 0, 0, 0.50)), url(../images/counter-bg.jpg) no-repeat center;
   background-size: cover;
@@ -123,14 +131,107 @@ header{
 }
 
 #counter p{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 #counter .counter-number{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: var(--regular);
 }
-/* ================= Counter Ends ================= */
+/* ================= Counter Section Ends ================= */
+
+/* ================= Our Team Section Start ================= */
+#our-team{}
+
+#our-team .single-card{
+  height: 20rem;
+}
+
+#our-team .wrapper{
+  perspective: 100rem;
+}
+
+#our-team .single-card{
+  transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -webkit-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -moz-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -ms-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  -o-transition: all 1s cubic-bezier(0.7, -.5, 0.3, 1.8);
+  transform-style: preserve-3d;
+}
+
+#our-team .wrapper:hover .single-card{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+#our-team .card-front,
+#our-team .card-back{
+  position: relative;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#our-team .card-front{
+  cursor: pointer;
+  height: 100%;
+  background-image: url(../images/gallery_1.webp);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+#our-team .card-back{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  height: 100%;
+  background: #e4e4e48a;
+}
+
+#our-team .name{
+  font-size: 2rem;
+  font-weight: var(--semiBold);
+}
+
+#our-team .title{
+  font-size: 1.6rem;
+  font-weight: var(--regular);
+}
+
+#our-team .description{
+  font-size: 1.2rem;
+  font-weight: var(--light);
+  line-height: 1.3rem;
+}
+
+#our-team .team-icon{
+  font-size: 2.5rem;
+  color: var(--blackColor);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+#our-team .team-icon:hover{
+  color: var(--brandColor);
+  transform: rotate(360deg) scale(1.5);
+  -webkit-transform: rotate(360deg) scale(1.5);
+  -moz-transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
+  -o-transform: rotate(360deg) scale(1.5);
+}
+/* ================= Our Team Section Ends ================= */
 
 /* ================= Footer Start ================= */
 #footer{

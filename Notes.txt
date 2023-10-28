@@ -85,3 +85,8 @@ scoll navbar item auto select https://www.youtube.com/watch?v=UoE1hqfpXX0
 git remote add origin https://github.com/mithon42/Blood-Donation.git
 git branch -M main
 git push -u origin main
+
+
+
+
+https://www.youtube.com/watch?v=6QE8dXq9SOE
