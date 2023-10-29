@@ -22,7 +22,7 @@
     <nav id="navbar" class="container">
       <div class="logo">
         <a href="#home">
-          <img src="./images/logo.png" alt="logo" />
+          <img src="./images/logo-1.png" alt="logo" />
         </a>
       </div>
 
@@ -37,10 +37,10 @@
             <a class="menu-list-link" href="#banner">home</a>
           </li>
           <li class="menu-list-item">
-            <a class="menu-list-link" href="#home">about</a>
+            <a class="menu-list-link" href="#home">services</a>
           </li>
           <li class="menu-list-item">
-            <a class="menu-list-link" href="#home">services</a>
+            <a class="menu-list-link" href="#features">features</a>
           </li>
           <li class="menu-list-item">
             <a class="menu-list-link" href="#our-team">teams</a>
@@ -55,14 +55,11 @@
   <!-- ================= Header / Navbar Ends ================= -->
 
   <main>
-
-    <!-- ================= Counter Section Start ================= -->
-
     <!-- ================= Banner Section Start ================= -->
     <section id="banner" class="d-flex align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="d-flex flex-column gap-5">
               <h1 class="app-name text-uppercase">blood Center</h1>
               <h2 class="banner-heading text-capitalize">Donate blood and save lives. Give blood and save life</h2>
@@ -70,7 +67,7 @@
                 benefited in many ways, some of them are - regular blood donation reduces the risk of cancer, giving
                 blood three times a year increases the rate of new red blood cell production in the body, keeps the bone
                 marrow active and Blood deficiency is quickly replenished.</p>
-              <div class="d-flex gap-4">
+              <div class="d-flex gap-4 justify-items-sm-center">
                 <button class="appstore-btn btn px-5 btn-outline-light d-flex align-items-center gap-3 rounded-4">
                   <span class="appstore-icon"><i class="fa-brands fa-apple"></i></span>
                   <div class="text-capitalize d-flex flex-column align-items-start">
@@ -92,15 +89,17 @@
               </p>
             </div>
           </div>
-          <div class="col-6">
+          <div class="d-none d-lg-block col-lg-6">
             <div class="d-flex justify-content-end">
-              <img src="./demo-img/welcome-mockup-2.png" alt="" width="400px">
+              <img src="./images/banner-mobile.png" alt="banner-mobile" width="600px">
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ================= Banner Section Start ================= -->
+
+    <!-- ================= Counter Section Start ================= -->
     <section id="counter">
       <div class="container">
         <div class="row">
@@ -137,11 +136,163 @@
     </section>
     <!-- ================= Counter Section Ends ================= -->
 
+    <!-- ================= Services Section Ends ================= -->
+    <section id="services" class="bg-white">
+      <div class="container">
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase">Services</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Services Section Ends ================= -->
+
+    <!-- ================= Features Section Ends ================= -->
+    <section id="features">
+      <div class="container">
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase">Amazing Features</h2>
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="accordion accordion-flush d-flex flex-column gap-3" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-truck-medical"></i></span>
+                      <span> Accordion Item 1</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="d-flex-gap-3">
+                      <span><i class="fa-solid fa-truck-medical"></i></span>
+                      <span> Accordion Item 2</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                    this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-truck-medical"></i></span>
+                      <span> Accordion Item 3</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-truck-medical"></i></span>
+                      <span> Accordion Item 4</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <div class="d-flex gap-3">
+                      <span><i class="fa-solid fa-truck-medical"></i></span>
+                      <span> Accordion Item 5</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-end">
+              <img src="./images/3.png" alt="features-image" width="600px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= Features Section Ends ================= -->
+
     <!-- ================= Our Team Section Start ================= -->
     <section id="our-team" class="bg-white">
       <div class="container">
-        <div class="section-title text-center mb-5 pb-3">
-          <h2 class="section-main-title text-uppercase">Developer team</h2>
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase">Developer team</h2>
         </div>
 
         <div class="row">
@@ -240,8 +391,8 @@
     <!-- ================= Testimonial Section Start ================= -->
     <section id="testimonial">
       <div class="container">
-        <div class="section-title text-center mb-5 pb-3">
-          <h2 class="section-main-title text-uppercase">Testimonial</h2>
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase">Testimonial</h2>
         </div>
 
         <div class="row d-flex justify-content-center">
@@ -343,8 +494,8 @@
     <!-- ================= Contact Section Start ================= -->
     <section id="contact" class="bg-white">
       <div class="container">
-        <div class="section-title text-center mb-5 pb-3">
-          <h2 class="section-main-title text-uppercase">contact us</h2>
+        <div class="text-center mb-5 pb-4">
+          <h2 class="section-title text-uppercase">contact us</h2>
         </div>
 
         <div class="row d-flex justify-content-center">
@@ -383,7 +534,7 @@
         <!-- footer logo -->
         <div class="col-md-6 col-lg-3 mb-md-5 footer-logo">
           <div class="d-flex flex-column gap-4">
-            <img src="./images/logo.png" alt="footer-logo" />
+            <img src="./images/logo-1.png" alt="footer-logo" />
             <button class="footer-btn p-0 btn">
               <span>Read More</span>
               <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -451,21 +602,9 @@
   <!-- =========== Copyright Start ========== -->
   <div class="copyright py-3">
     <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="d-none d-lg-block col-lg-6">
-          <div class="d-flex gap-5">
-            <button class="btn d-flex align-items-center gap-3 px-4 copyright-btn">
-              <span class="btn-icon"><i class="fa-brands fa-apple"></i></span>
-              <span>Download for iOS</span>
-            </button>
-            <button class="btn d-flex align-items-center gap-3 px-4 copyright-btn">
-              <span class="btn-icon"><i class="fa-brands fa-google-play"></i></span>
-              <span>Download for Android</span>
-            </button>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="copyright-text text-center text-lg-end">
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright-text text-center">
             <p class="text-capitalize">copyright &copy; design by: <span>frish hand coder</span></p>
           </div>
         </div>

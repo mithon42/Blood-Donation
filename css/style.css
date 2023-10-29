@@ -2,14 +2,13 @@
 
 /* All Variables */
 :root {
-  --brandColor: #A41214;
-  --primaryColor: #8A0302;
+  --brandColor: #FF6553;
+  --primaryColor: #FE8950;
   --blackColor: #070603;
   --whiteColor: #FCFCFC;
   --iconSize: 3rem;
   --poppinsFonts: "Poppins", sans-serif;
   --letterSpacing-1: 0.1rem;
-  --shadowSmall: 0.2rem 0.2rem 0.5rem red;
   --thin: 100;
   --extraLight: 200;
   --light: 300;
@@ -27,17 +26,10 @@
 html {
   font-size: 62.5%;
   font-family: var(--poppinsFonts);
-  /* 
-  PX to REM
-    1px == 0.1rem
-    Exp: 
-      font-size: 16px;
-        font-size: 1.6rem; 
-  */
 }
 
 body{
-  background: #d8d8d8;
+  background: #EEF1F8;
 }
 
 section{
@@ -45,18 +37,38 @@ section{
 }
 
 .section-title{
-}
-
-.section-main-title{
   font-size: 3.5rem;
   font-weight: var(--bold);
   user-select: none;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.section-title::after{
+  content: '';
+  width: 50%;
+  height: 0.4rem;
+  background: var(--brandColor);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 /* ================= Common Style Ends ================= */
 
 /* ================= Header Style Start ================= */
 header{
-  background: linear-gradient(#FF6853, #FF7A51);
+  background: linear-gradient(to left, #FF6853, #FF7A51);
   /* background: linear-gradient(#AB9356, #FE5A51); */
   /* background: transparent; */
   width: 100%;
@@ -168,12 +180,9 @@ header{
 /* ================= Banner Section Ends ================= */
 
 
-
-
-
 /* ================= Counter Section Start ================= */
 #counter{
-  background: linear-gradient(rgba(255, 0, 0, 0.50), rgba(255, 0, 0, 0.50));
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
   color: var(--whiteColor);
 }
 
@@ -191,8 +200,45 @@ header{
 }
 /* ================= Counter Section Ends ================= */
 
+/* ================= Features Section Ends ================= */
+#features{
+
+}
+
+
+#features .accordion-button{
+  font-size: 1.6rem;
+}
+
+#features .accordion-button:not(.collapsed){
+  background: var(--brandColor);
+  color: var(--whiteColor);
+}
+
+.accordion-body {
+  color: red;
+  font-size: 1.3rem;
+}
+
+#features .accordion-button::after{
+  transition: all 0.4;
+  -webkit-transition: all 0.4;
+  -moz-transition: all 0.4;
+  -ms-transition: all 0.4;
+  -o-transition: all 0.4;
+
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>');
+}
+#features .accordion-button:not(.collapsed)::after{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
+}
+/* ================= Features Section Ends ================= */
+
 /* ================= Our Team Section Start ================= */
-#our-team{}
+#our-team{
+  background:  linear-gradient(to right, rgba(255, 103, 83, 0.8), rgba(255, 122, 81, 0.8)), url(../images/counter-bg.jpg) no-repeat center;
+  background-size: cover;
+}
 
 #our-team .single-card{
   height: 20rem;
@@ -287,7 +333,7 @@ header{
 /* ================= Testimonial Section Start ================= */
 #testimonial{
   width: 100%;
-  height: 43rem;
+  height: 45rem;
 }
 
 #testimonial .review-box{
@@ -426,7 +472,8 @@ header{
 /* ================= Footer Start ================= */
 #footer{
   padding: 4rem 0;
-  border-bottom: 0.2rem solid var(--blackColor)
+  border-bottom: 0.2rem solid var(--blackColor);
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
 }
 
 #footer .footer-title{
@@ -481,17 +528,6 @@ header{
 .copyright{
   background: #bfc0be;
   border-top: 0.1rem solid var(--whiteColor);
-}
-
-.copyright .copyright-btn{
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  background: var(--whiteColor);
-  color: var(--blackColor);
-}
-
-.copyright .copyright-btn .btn-icon{
-  font-size: 2rem
 }
 
 .copyright .copyright-text p{
