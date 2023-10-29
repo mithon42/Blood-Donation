@@ -43,7 +43,7 @@ downArrow.addEventListener('click', function() {
 
 
 // Counter Funcation Start ==============================
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
   function counter(id, start, end, duration) {
     let obj = document.getElementById(id),
       current = start,
@@ -62,5 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
   counter("countTow", 100, 300, 2500);
   counter("countThree", 0, 250, 3000);
   counter("countFour", 0, 120, 3000);
-});
+};
 // Counter Funcation Ends ==============================

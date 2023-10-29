@@ -56,7 +56,8 @@ section{
 
 /* ================= Header Style Start ================= */
 header{
-  background: linear-gradient(#AB9356, #FE5A51);
+  background: linear-gradient(#FF6853, #FF7A51);
+  /* background: linear-gradient(#AB9356, #FE5A51); */
   /* background: transparent; */
   width: 100%;
   /* position: fixed; */
@@ -117,9 +118,52 @@ header{
 
 /* ================= Banner Section Start ================= */
 #banner{
-  background: linear-gradient(rgba(255, 0, 0, 0.35), rgba(255, 0, 0, 0.35)), url(../demo-img/banner.webp) no-repeat center;
+  background: url(../images/banner-bg.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
+}
+
+.app-name{
+  font-size: 5.5rem;
+  font-weight: var(--extraBold);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+}
+
+.banner-heading{
+  font-size: 3rem;
+  font-weight: var(--bold);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+  line-height: 3.2rem;
+}
+.banner-description{
+  font-size: 1.6rem;
+  font-weight: var(--regular);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+
+.appstore-btn,
+.playstore-btn{
+  background: linear-gradient(#FF6853, #FF7A51);
+}
+.appstore-btn p,
+.playstore-btn p{
+  font-size: 1rem;
+  font-weight: var(--regular);
+}
+
+.appstore-btn h3,
+.playstore-btn h3{
+  font-size: 2.2rem;
+  font-weight: var(--regular);
+}
+
+.appstore-icon,
+.playstore-icon{
+  font-size: 3.5rem;
 }
 /* ================= Banner Section Ends ================= */
 
@@ -243,11 +287,11 @@ header{
 /* ================= Testimonial Section Start ================= */
 #testimonial{
   width: 100%;
-  height: 45rem;
+  height: 43rem;
 }
 
 #testimonial .review-box{
-  height: 20rem;
+  height: 22rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -309,7 +353,7 @@ header{
 }
 
 #testimonial-slider{
-  width: 100%;
+  /* width: 100%; */
   padding-right: 5rem;
   box-sizing: border-box;
   position: absolute;
@@ -324,7 +368,7 @@ header{
 
 .slidebar{
   width: 5rem;
-  height: 20rem;
+  height: 100%;
   padding: 1.5rem 0;
   box-sizing: border-box;
   background: var(--brandColor);
@@ -347,6 +391,10 @@ header{
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   cursor: pointer;
+}
+
+.slidebar span:hover{
+  color: var(--brandColor);
 }
 /* ================= Testimonial Section Ends ================= */
 
