@@ -16,6 +16,32 @@ toggleCloseBtn.addEventListener("click", function () {
 // Header Ends ==========================
 
 
+
+// Testimonial Slider Funcation Start =============================
+let testimonialSlider = document.getElementById('testimonial-slider');
+let upArrow = document.getElementById('upArrow');
+let downArrow = document.getElementById('downArrow');
+
+let x = 0;
+
+upArrow.addEventListener('click', function() {
+  if(x > '-750'){
+    x = x - 250;
+    testimonialSlider.style.top = x + 'px';
+  }
+})
+
+downArrow.addEventListener('click', function() {
+  if(x < 0){
+    x = x + 250;
+    testimonialSlider.style.top = x + 'px';
+  }
+})
+
+// Testimonial Slider Funcation Ends ==============================
+
+
+
 // Counter Funcation Start ==============================
 document.addEventListener("DOMContentLoaded", () => {
   function counter(id, start, end, duration) {

@@ -21,7 +21,6 @@
   --black: 900;
   --footerTitle: 2.5rem;
   --footerIcon: 2rem;
-  --footerLogoSize: 4rem;
 }
 
 /* ================= Common Style Start ================= */
@@ -55,11 +54,12 @@ section{
 }
 /* ================= Common Style Ends ================= */
 
-
 /* ================= Header Style Start ================= */
 header{
-  background: var(--brandColor);
+  background: linear-gradient(#AB9356, #FE5A51);
+  /* background: transparent; */
   width: 100%;
+  /* position: fixed; */
 }
 #navbar {
   height: 7rem;
@@ -76,7 +76,7 @@ header{
 }
 
 .logo a img{
-  width: 6.5rem;
+  width: 12rem;
 }
 
 /* menu */
@@ -115,14 +115,21 @@ header{
 
 /* ================ Header Style Ends ================ */
 
+/* ================= Banner Section Start ================= */
+#banner{
+  background: linear-gradient(rgba(255, 0, 0, 0.35), rgba(255, 0, 0, 0.35)), url(../demo-img/banner.webp) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+/* ================= Banner Section Ends ================= */
+
 
 
 
 
 /* ================= Counter Section Start ================= */
 #counter{
-  background: linear-gradient(rgba(255, 0, 0, 0.50), rgba(255, 0, 0, 0.50)), url(../images/counter-bg.jpg) no-repeat center;
-  background-size: cover;
+  background: linear-gradient(rgba(255, 0, 0, 0.50), rgba(255, 0, 0, 0.50));
   color: var(--whiteColor);
 }
 
@@ -233,6 +240,116 @@ header{
 }
 /* ================= Our Team Section Ends ================= */
 
+/* ================= Testimonial Section Start ================= */
+#testimonial{
+  width: 100%;
+  height: 45rem;
+}
+
+#testimonial .review-box{
+  height: 20rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+#testimonial .testimonial-card{
+  height: 25rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  background: var(--whiteColor);
+  position: relative;
+  z-index: 1;
+}
+
+#testimonial .testimonial-card::before{
+  content: '';
+  width: 10rem;
+  height: 10rem;
+  border-bottom-right-radius: 100%;
+  background: var(--brandColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.profile .name{
+  font-size: 2rem;
+  font-weight: var(--mediam);
+}
+
+.profile .title{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+}
+
+.testimonial-card .info{
+ font-size: 1.3rem;
+ font-weight: var(--regular);
+}
+
+
+
+#testimonial .profile img{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 2rem;
+  border: 0.2rem solid #fff;
+}
+
+#testimonial-slider{
+  width: 100%;
+  padding-right: 5rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.slidebar{
+  width: 5rem;
+  height: 20rem;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  background: var(--brandColor);
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slidebar span{
+  font-size: 2rem;
+  padding: 1rem;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  cursor: pointer;
+}
+/* ================= Testimonial Section Ends ================= */
+
 /* ================= Contact Section Start ================= */
 #contact{
   
@@ -272,7 +389,10 @@ header{
 }
 
 #footer .footer-logo img{
-  width: var(--footerLogoSize);
+  width: 12rem;
+  margin-bottom: -1rem;
+  margin-top: -3rem;
+  margin-left: -2rem;
 }
 
 #footer .footer-logo .footer-btn{
