@@ -69,6 +69,7 @@ section{
 .section-dec{
   font-size: 1.4rem;
   font-weight: var(--regular);
+  width: 50%;
 }
 
 .btn{
@@ -595,19 +596,9 @@ header nav .mobile-menu .overlay-bg .overlay-content a:hover {
   background: transparent;
 }
 
-#footer .footer-logo .footer-btn:hover{
-  color: var(--brandColor);
-  background: transparent;
-}
-
 #footer .footer-icon{
   font-size: var(--footerIcon);
   color: var(--whiteColor);
-}
-
-#footer .company a.link:hover,
-#footer .support a.link:hover{
-  color: var(--brandColor);
 }
 
 #footer .footer-logo .info,
@@ -638,17 +629,3 @@ header nav .mobile-menu .overlay-bg .overlay-content a:hover {
   color: var(--whiteColor);
 }
 /* ================= Copyright Ends ================= */
-
-
-
-
-
-
-@media only screen and (max-width: 1024px) {
-  header nav .main-nav {
-    display: none;
-  }
-  header nav .mobile-menu span {
-    display: block;
-  }
-}
