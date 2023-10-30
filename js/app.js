@@ -24,15 +24,15 @@ let downArrow = document.getElementById('downArrow');
 
 let x = 0;
 
-upArrow.addEventListener('click', function() {
-  if(x > '-750'){
+upArrow.addEventListener('click', function () {
+  if (x > '-750') {
     x = x - 250;
     testimonialSlider.style.top = x + 'px';
   }
 })
 
-downArrow.addEventListener('click', function() {
-  if(x < 0){
+downArrow.addEventListener('click', function () {
+  if (x < 0) {
     x = x + 250;
     testimonialSlider.style.top = x + 'px';
   }
@@ -56,11 +56,35 @@ window.onload = () => {
         if (current == end) {
           clearInterval(timer);
         }
-    }, step);
+      }, step);
   }
-  counter("countOne", 0, 400, 3000);
-  counter("countTow", 100, 300, 2500);
-  counter("countThree", 0, 250, 3000);
-  counter("countFour", 0, 120, 3000);
+  counter("countOne", 0, 4500, 2000);
+  counter("countTow", 0, 30500, 2000);
+  counter("countThree", 0, 5205, 2000);
+  counter("countFour", 0, 6982, 2000);
 };
 // Counter Funcation Ends ==============================
+
+
+// Owl Carousel Start =============================
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+  items: 4,
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 4
+    }
+  }
+});
+// Owl Carousel Ends =============================

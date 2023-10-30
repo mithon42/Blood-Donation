@@ -446,7 +446,7 @@ header{
 
 /* ================= Contact Section Start ================= */
 #contact{
-  
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
 }
 
 #contact form label{
@@ -473,7 +473,6 @@ header{
 #footer{
   padding: 4rem 0;
   border-bottom: 0.2rem solid var(--blackColor);
-  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
 }
 
 #footer .footer-title{
@@ -526,7 +525,7 @@ header{
 
 /* ================= Copyright Start ================= */
 .copyright{
-  background: #bfc0be;
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
   border-top: 0.1rem solid var(--whiteColor);
 }
 
@@ -536,6 +535,6 @@ header{
 }
 
 .copyright .copyright-text span{
-  color: var(--brandColor);
+  color: var(--whiteColor);
 }
 /* ================= Copyright Ends ================= */
