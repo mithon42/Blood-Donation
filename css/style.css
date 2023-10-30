@@ -26,6 +26,7 @@
 html {
   font-size: 62.5%;
   font-family: var(--poppinsFonts);
+  scroll-behavior: smooth;
 }
 
 body{
@@ -64,68 +65,150 @@ section{
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
+
+.section-dec{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+}
+
+.btn{
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+}
+
+.btn:hover{
+  background: linear-gradient(to right, var(--brandColor), var(--primaryColor));
+  box-shadow: var(--brandColor) 0px 13px 27px -5px, var(--brandColor) 0px 8px 16px -8px;
+  color: #D20031;
+}
 /* ================= Common Style Ends ================= */
 
 /* ================= Header Style Start ================= */
-header{
+header {
   background: linear-gradient(to left, #FF6853, #FF7A51);
-  /* background: linear-gradient(#AB9356, #FE5A51); */
-  /* background: transparent; */
-  width: 100%;
-  /* position: fixed; */
-}
-#navbar {
-  height: 7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-#navbar .logo {
+header nav a.logo {
+  padding: .2rem 1.1rem;
+  border-radius: .8rem .1rem;
+  -webkit-border-radius: .8rem .1rem;
+  -moz-border-radius: .8rem .1rem;
+  -ms-border-radius: .8rem .1rem;
+  -o-border-radius: .8rem .1rem;
+  float: left;
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 900;
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
 }
 
-.logo a{
-  
+header nav a.logo img{
+  width: 5rem;
+
 }
 
-.logo a img{
-  width: 12rem;
+header nav .main-nav {
+  float: right;
+  margin-top: 1.5rem;
 }
 
-/* menu */
-#navbar .menu {
+header nav .main-nav li {
+  display: inline-block;
+  margin-left: .5rem;
 }
 
-.menu ul.menu-lists {
-  display: flex;
-  gap: 2.5rem
+header nav .main-nav li:first-child {
+  margin-left: 0;
 }
 
-.menu-lists li.menu-list-item {
-  font-size: 1.8rem;
-  font-weight: var(--regular);
-  text-transform: capitalize;
+header nav .main-nav li a {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--whiteColor);
+  border-radius: .4rem;
+  padding: 1rem 1.3rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
 }
 
-.menu-list-item a.menu-list-link {
+header nav .main-nav li:hover a {
+  color: #ddd;
+}
+
+header nav .mobile-menu span {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  float: right;
+  margin-top: 1.5rem;
+  display: none;
+}
+
+header nav .mobile-menu span:hover {
+  cursor: pointer;
+}
+
+header nav .mobile-menu .overlay-bg {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: var(--brandColor);
+  z-index: 99999;
+  overflow-x: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav .mobile-menu .overlay-bg .closeBtn {
+  position: absolute;
+  top: 1.8rem;
+  right: 3.5rem;
+  font-size: 4.2rem;
   color: var(--whiteColor);
   text-decoration: none;
 }
 
-/* toggle button */
-.toggle span#toggleOpenBtn{
-  font-size: 3rem;
-  color: var(--whiteColor);
-  cursor: pointer;
+header nav .mobile-menu .overlay-bg .overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
 }
 
-.toggle span#toggleCloseBtn{
-  display: none;
-  font-size: 3rem;
+header nav .mobile-menu .overlay-bg .overlay-content a {
+  width: 50%;
+  margin: auto;
   color: var(--whiteColor);
-  cursor: pointer;
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
 }
 
+header nav .mobile-menu .overlay-bg .overlay-content a:hover {
+  color: var(--whiteColor);
+}
 /* ================ Header Style Ends ================ */
 
 /* ================= Banner Section Start ================= */
@@ -157,10 +240,10 @@ header{
   line-height: 2rem;
 }
 
-.appstore-btn,
-.playstore-btn{
-  background: linear-gradient(#FF6853, #FF7A51);
+.available-text{
+  font-size: 1.4rem;
 }
+
 .appstore-btn p,
 .playstore-btn p{
   font-size: 1rem;
@@ -184,6 +267,7 @@ header{
 #counter{
   background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
   color: var(--whiteColor);
+  padding: 5rem 0;
 }
 
 #counter .counter-icon{
@@ -200,17 +284,17 @@ header{
 }
 /* ================= Counter Section Ends ================= */
 
-/* ================= Features Section Ends ================= */
-#features{
-
+/* ================= services Section Ends ================= */
+#services{
+  /* background: linear-gradient(to right, var(--primaryColor), var(--brandColor)); */
 }
 
 
-#features .accordion-button{
+#services .accordion-button{
   font-size: 1.6rem;
 }
 
-#features .accordion-button:not(.collapsed){
+#services .accordion-button:not(.collapsed){
   background: var(--brandColor);
   color: var(--whiteColor);
 }
@@ -220,7 +304,7 @@ header{
   font-size: 1.3rem;
 }
 
-#features .accordion-button::after{
+#services .accordion-button::after{
   transition: all 0.4;
   -webkit-transition: all 0.4;
   -moz-transition: all 0.4;
@@ -229,15 +313,31 @@ header{
 
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>');
 }
-#features .accordion-button:not(.collapsed)::after{
+#services .accordion-button:not(.collapsed)::after{
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
 }
-/* ================= Features Section Ends ================= */
+/* ================= services Section Ends ================= */
+
+/* ================= beautiful-interface Section Ends ================= */
+#beautiful-interface{
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
+}
+
+#beautiful-interface .card-header{
+  font-size: 2rem;
+  font-weight: var(--mediam);
+}
+
+#beautiful-interface .list-group-item {
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+}
+/* ================= beautiful-interface Section Ends ================= */
 
 /* ================= Our Team Section Start ================= */
 #our-team{
-  background:  linear-gradient(to right, rgba(255, 103, 83, 0.8), rgba(255, 122, 81, 0.8)), url(../images/counter-bg.jpg) no-repeat center;
-  background-size: cover;
+  /* background:  linear-gradient(to right, rgba(255, 103, 83, 0.8), rgba(255, 122, 81, 0.8)), url(../images/counter-bg.jpg) no-repeat center;
+  background-size: cover; */
 }
 
 #our-team .single-card{
@@ -263,6 +363,7 @@ header{
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+  box-shadow: var(--brandColor) 0px 13px 27px -5px, var(--brandColor) 0px 8px 16px -8px;
 }
 
 #our-team .card-front,
@@ -277,9 +378,9 @@ header{
 #our-team .card-front{
   cursor: pointer;
   height: 100%;
-  background-image: url(../images/gallery_1.webp);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  background: url(../images/teams.png);
   background-size: cover;
   background-position: center center;
 }
@@ -334,6 +435,7 @@ header{
 #testimonial{
   width: 100%;
   height: 45rem;
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
 }
 
 #testimonial .review-box{
@@ -346,6 +448,7 @@ header{
   position: relative;
   margin: auto;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #testimonial .testimonial-card{
@@ -383,8 +486,6 @@ header{
  font-size: 1.3rem;
  font-weight: var(--regular);
 }
-
-
 
 #testimonial .profile img{
   width: 7rem;
@@ -445,10 +546,6 @@ header{
 /* ================= Testimonial Section Ends ================= */
 
 /* ================= Contact Section Start ================= */
-#contact{
-  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
-}
-
 #contact form label{
   font-size: 2rem;
 }
@@ -473,10 +570,11 @@ header{
 #footer{
   padding: 4rem 0;
   border-bottom: 0.2rem solid var(--blackColor);
+  background: linear-gradient(to right, var(--primaryColor), var(--brandColor));
 }
 
 #footer .footer-title{
-  color: var(--blackColor);
+  color: var(--whiteColor);
   font-family: var(--poppinsFonts);
   font-size: var(--footerTitle);
   font-weight: var(--semiBold);
@@ -491,18 +589,20 @@ header{
 
 #footer .footer-logo .footer-btn{
   width: fit-content;
-  color: var(--blackColor);
+  color: var(--whiteColor);
   font-size: 1.4rem;
   font-weight: var(--regular);
+  background: transparent;
 }
 
 #footer .footer-logo .footer-btn:hover{
   color: var(--brandColor);
+  background: transparent;
 }
 
 #footer .footer-icon{
   font-size: var(--footerIcon);
-  color: var(--blackColor);
+  color: var(--whiteColor);
 }
 
 #footer .company a.link:hover,
@@ -518,7 +618,7 @@ header{
 .get-in-touch ul li span.address{
   font-size: 1.4rem;
   font-weight: var(--regular);
-  color: var(--blackColor);
+  color: var(--whiteColor);
   letter-spacing: 0.1rem;
 }
 /* ================= Footer Ends ================= */
@@ -538,3 +638,17 @@ header{
   color: var(--whiteColor);
 }
 /* ================= Copyright Ends ================= */
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  header nav .main-nav {
+    display: none;
+  }
+  header nav .mobile-menu span {
+    display: block;
+  }
+}

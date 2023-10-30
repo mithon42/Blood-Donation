@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
   <title>Bload Donations | Fresh hand Coder Team</title>
   <!-- Font-Awesome -->
-  <!-- <link rel="stylesheet" href="./css/fontawesome.min.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
   <!-- Owl Carousel -->
@@ -22,37 +21,34 @@
 
 <body>
   <!-- ================= Header / Navbar Start ================= -->
-  <header>
-    <nav id="navbar" class="container">
-      <div class="logo">
-        <a href="#home">
-          <img src="./images/logo-1.png" alt="logo" />
+  <header class="fixed-top">
+    <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo-12.png" alt="logo">
         </a>
-      </div>
-
-      <div class="toggle">
-        <span id="toggleOpenBtn"><i class="fa-solid fa-bars"></i></span>
-        <span id="toggleCloseBtn"><i class="fa-solid fa-xmark"></i></span>
-      </div>
-
-      <div class="menu">
-        <ul class="menu-lists">
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="#banner">home</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="#services">services</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="#features">features</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="#our-team">teams</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="#contact">contact</a>
-          </li>
+        <!-- Main Menu -->
+        <ul class="main-nav">
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#our-team">Teams</a></li>
+          <li><a href="#testimonial">testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <span onclick="openNav()">&#9776;</span>
+          <div id="myNav" class="overlay-bg">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a onclick="closeNav()" href="#home">Home</a>
+              <a onclick="closeNav()" href="#services">services</a>
+              <a onclick="closeNav()" href="#our-team">teams</a>
+              <a onclick="closeNav()" href="#testimonial">testimonial</a>
+              <a onclick="closeNav()" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -60,13 +56,13 @@
 
   <main>
     <!-- ================= Banner Section Start ================= -->
-    <section id="banner" class="d-flex align-items-center">
+    <section id="banner" class="d-flex align-items-center mt-lg-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
             <div class="d-flex flex-column gap-5">
               <h1 class="app-name text-uppercase">blood Center</h1>
-              <h2 class="banner-heading text-capitalize">Donate blood and save lives. Give blood and save life</h2>
+              <h2 class="banner-heading text-capitalize">Donate blood and save lives.</h2>
               <p class="banner-description">Donating blood not only saves people's lives, but blood donors are also
                 benefited in many ways, some of them are - regular blood donation reduces the risk of cancer, giving
                 blood three times a year increases the rate of new red blood cell production in the body, keeps the bone
@@ -88,7 +84,7 @@
                   </div>
                 </button>
               </div>
-              <p><span class="text-warning">*</span> Available on iPhone, iPad and all Android
+              <p class="available-text"><span class="text-warning">*</span> Available on iPhone, iPad and all Android
                 devices
               </p>
             </div>
@@ -116,7 +112,7 @@
           </div>
           <div class="col-6 col-md-3 mb-5 mb-md-0">
             <div class="d-flex flex-column gap-3 align-items-center">
-              <span class="counter-icon"><i class="fa-brands fa-instalod"></i></span>
+              <span class="counter-icon"><i class="fa-solid fa-download"></i></span>
               <p class="user-select-none">Download</p>
               <span id="countTow" class="counter-number user-select-none">0</span>
             </div>
@@ -130,8 +126,8 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="d-flex flex-column gap-3 align-items-center">
-              <span class="counter-icon"><i class="fa-solid fa-comment"></i></span>
-              <p class="user-select-none">Client</p>
+              <span class="counter-icon"><i class="fa-solid fa-user-group"></i></span>
+              <p class="user-select-none">Regular Doner</p>
               <span id="countFour" class="counter-number user-select-none">0</span>
             </div>
           </div>
@@ -140,106 +136,13 @@
     </section>
     <!-- ================= Counter Section Ends ================= -->
 
-    <!-- ================= Services Section Ends ================= -->
-    <section id="services" class="bg-white">
+    <!-- ================= services Section Ends ================= -->
+    <section id="services">
       <div class="container">
-        <div class="text-center mb-5 pb-4">
+        <div class="text-center mb-5 pb-4 d-flex flex-column align-items-center">
           <h2 class="section-title text-uppercase">Services</h2>
-        </div>
-
-        <div class="row">
-          <div class="owl-carousel owl-theme">
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card item">
-              <img
-                src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-a-lifelike-representation-of-a-smartphone-a-simulated-version-of-a-png-image_12954832.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================= Services Section Ends ================= -->
-
-    <!-- ================= Features Section Ends ================= -->
-    <section id="features">
-      <div class="container">
-        <div class="text-center mb-5 pb-4">
-          <h2 class="section-title text-uppercase">Amazing Features</h2>
+          <p class="text-center mt-4 w-50 text-capitalize section-dec">Our service is to provide free blood to various
+            patients so that a patient can recover easily</p>
         </div>
 
         <div class="row d-flex align-items-center">
@@ -250,14 +153,14 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     <div class="d-flex gap-3">
-                      <span><i class="fa-solid fa-truck-medical"></i></span>
-                      <span> Accordion Item 1</span>
+                      <span><i class="fa-solid fa-droplet"></i></span>
+                      <span>Blood</span>
                     </div>
                   </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  <div class="accordion-body">A patient can easily collect blood of his required group through our one
+                    use</div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -265,15 +168,14 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     <div class="d-flex-gap-3">
-                      <span><i class="fa-solid fa-truck-medical"></i></span>
-                      <span> Accordion Item 2</span>
+                      <span><i class="fa-solid fa-people-group"></i></span>
+                      <span>volunteer</span>
                     </div>
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                    this being filled with some actual content.</div>
+                  <div class="accordion-body">We have around 2000 volunteers working with us who help a patient get free
+                    blood by guiding different donors.</div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -281,17 +183,15 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     <div class="d-flex gap-3">
-                      <span><i class="fa-solid fa-truck-medical"></i></span>
-                      <span> Accordion Item 3</span>
+                      <span><i class="fa-solid fa-hand-holding-heart"></i></span>
+                      <span>Gol</span>
                     </div>
                   </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse show"
                   data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="accordion-body">Our mission is to help a patient get the blood they need easily by helping
+                    a patient get the blood they need so that no one can receive treatment for lack of blood.</div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -299,17 +199,16 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     <div class="d-flex gap-3">
-                      <span><i class="fa-solid fa-truck-medical"></i></span>
-                      <span> Accordion Item 4</span>
+                      <span><i class="fa-solid fa-briefcase-medical"></i></span>
+                      <span>donor</span>
                     </div>
                   </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse"
                   data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="accordion-body">We have regular donors who donate blood for free and help about 2000
+                    patients with regular blood.
+                    We invite all donors to use our app to help a patient get the type of blood they need</div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -317,17 +216,14 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                     <div class="d-flex gap-3">
-                      <span><i class="fa-solid fa-truck-medical"></i></span>
-                      <span> Accordion Item 5</span>
+                      <span><i class="fa-solid fa-phone"></i></span>
+                      <span>Help Center</span>
                     </div>
                   </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse"
                   data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="accordion-body">A patient can easily report his problem through our help center</div>
                 </div>
               </div>
             </div>
@@ -335,32 +231,76 @@
           <div class="col-12 col-md-7">
             <div class="d-flex justify-content-end gap-3 owl-carousel">
               <div class="item">
-                <img src="./images/1.png" alt="features-image" width="220px" height="300px">
+                <img src="./images/1.png" alt="features-image" width="220px" height="400px">
               </div>
               <div class="item">
-                <img src="./images/2.png" alt="features-image" width="220px" height="300px">
+                <img src="./images/2.png" alt="features-image" width="220px" height="400px">
               </div>
               <div class="item">
-                <img src="./images/3.png" alt="features-image" width="220px" height="300px">
+                <img src="./images/3.png" alt="features-image" width="220px" height="400px">
               </div>
               <div class="item">
-                <img src="./images/4.png" alt="features-image" width="220px" height="300px">
+                <img src="./images/4.png" alt="features-image" width="220px" height="400px">
               </div>
               <div class="item">
-                <img src="./images/5.png" alt="features-image" width="220px" height="300px">
+                <img src="./images/5.png" alt="features-image" width="220px" height="400px">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ================= Features Section Ends ================= -->
+    <!-- ================= services Section Ends ================= -->
+
+    <!-- ================= beautiful-interface Section Ends ================= -->
+    <section id="beautiful-interface">
+      <div class="container">
+        <div class="text-center mb-5 pb-4 d-flex flex-column align-items-center text-white">
+          <h2 class="section-title text-uppercase">Simple & Beautiful Interface</h2>
+          <p class="text-center mt-4 w-50 text-capitalize section-dec">Very simple features through which a user can
+            easily use the app A blood donor can easily donate blood to a patient</p>
+        </div>
+
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <img src="./images/1.png" alt="1">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/2.png" alt="2">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/3.png" alt="3">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/4.png" alt="4">
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./images/5.png" alt="5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= beautiful-interface Section Ends ================= -->
 
     <!-- ================= Our Team Section Start ================= -->
-    <section id="our-team" class="bg-white">
+    <section id="our-team">
       <div class="container">
-        <div class="text-center mb-5 pb-4">
+        <div class="text-center mb-5 pb-4 d-flex flex-column align-items-center">
           <h2 class="section-title text-uppercase">Developer team</h2>
+          <p class="text-center mt-4 w-50 text-capitalize section-dec">I am a professional web designer designing using
+            HTML CSS Java Script Bootstrap React.</p>
         </div>
 
         <div class="row">
@@ -371,7 +311,7 @@
                 class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
                 <div class="d-flex flex-column gap-2">
                   <h3 class="name text-uppercase">Md. Mithon Ali</h3>
-                  <h4 class="title text-capitalize">react Developer</h4>
+                  <h4 class="title text-capitalize">Web Developer</h4>
                 </div>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
                   commodi
@@ -392,8 +332,8 @@
               <div
                 class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
                 <div class="d-flex flex-column gap-2">
-                  <h3 class="name text-uppercase">Md. Mithon Ali</h3>
-                  <h4 class="title text-capitalize">react Developer</h4>
+                  <h3 class="name text-uppercase">Soad Mahamud</h3>
+                  <h4 class="title text-capitalize">Web Developer</h4>
                 </div>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
                   commodi
@@ -414,13 +354,10 @@
               <div
                 class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
                 <div class="d-flex flex-column gap-2">
-                  <h3 class="name text-uppercase">Md. Mithon Ali</h3>
-                  <h4 class="title text-capitalize">react Developer</h4>
+                  <h3 class="name text-uppercase">Md.Julhas</h3>
+                  <h4 class="title text-capitalize">Web Developer</h4>
                 </div>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
-                  commodi
-                  natus veritatis
-                  accusantium id asperiores consequatur neque quia?</p>
+                <p class="description">I am a font-end web developer.</p>
                 <div class="d-flex justify-content-center gap-4">
                   <a href="#" class="team-icon"><i class="fa-brands fa-square-facebook"></i></a>
                   <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -436,8 +373,8 @@
               <div
                 class="card-back d-flex flex-column justify-content-center gap-4 text-center p-2 p-md-5 position-absolute">
                 <div class="d-flex flex-column gap-2">
-                  <h3 class="name text-uppercase">Md. Mithon Ali</h3>
-                  <h4 class="title text-capitalize">react Developer</h4>
+                  <h3 class="name text-uppercase">salaudin</h3>
+                  <h4 class="title text-capitalize">web Developer</h4>
                 </div>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quas
                   commodi
@@ -460,16 +397,35 @@
     <section id="testimonial">
       <div class="container">
         <div class="text-center mb-5 pb-4">
-          <h2 class="section-title text-uppercase">Testimonial</h2>
+          <h2 class="section-title text-uppercase text-white">Testimonial</h2>
         </div>
-
         <div class="row d-flex justify-content-center">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-8 col-lg-7">
             <div class="review-box">
               <div id="testimonial-slider">
                 <div class="testimonial-card d-flex flex-column gap-3">
                   <div class="profile d-flex align-items-center">
-                    <img src="./demo-img/faveIconeImg.png" alt="images">
+                    <img src="./images/elayas.jpeg" alt="images">
+                    <div class="d-flex flex-column gap-2">
+                      <h4 class="name text-uppercase">Elias Bhuiyan</h4>
+                      <p class="title text-capitalize">Mern Stack Developer</p>
+                    </div>
+                  </div>
+                  <div class="start d-flex gap-2">
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="text-warning"><i class="fa-solid fa-star-half"></i></span>
+                  </div>
+                  <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, inventore aperiam?
+                    Pariatur
+                    natus ipsam, ipsa quo tempora eum dolor temporibus, et expedita omnis laboriosam nihil veniam sint
+                    facere rerum modi.</p>
+                </div>
+                <div class="testimonial-card d-flex flex-column gap-3">
+                  <div class="profile d-flex align-items-center">
+                    <img src="./images/testimonial-0.png" alt="images">
                     <div class="d-flex flex-column gap-2">
                       <h4 class="name text-uppercase">Md. Mithon Ali</h4>
                       <p class="title text-capitalize">react Developer</p>
@@ -489,10 +445,10 @@
                 </div>
                 <div class="testimonial-card d-flex flex-column gap-3">
                   <div class="profile d-flex align-items-center">
-                    <img src="./demo-img/faveIconeImg.png" alt="images">
+                    <img src="./images/hm-nayem.jpg" alt="images">
                     <div class="d-flex flex-column gap-2">
-                      <h4 class="name text-uppercase">Md. Mithon Ali</h4>
-                      <p class="title text-capitalize">react Developer</p>
+                      <h4 class="name text-uppercase">HM Nayem</h4>
+                      <p class="title text-capitalize">Full Stack Developer</p>
                     </div>
                   </div>
                   <div class="start d-flex gap-2">
@@ -509,30 +465,10 @@
                 </div>
                 <div class="testimonial-card d-flex flex-column gap-3">
                   <div class="profile d-flex align-items-center">
-                    <img src="./demo-img/faveIconeImg.png" alt="images">
+                    <img src="./images/teams.png" alt="images">
                     <div class="d-flex flex-column gap-2">
-                      <h4 class="name text-uppercase">Md. Mithon Ali</h4>
-                      <p class="title text-capitalize">react Developer</p>
-                    </div>
-                  </div>
-                  <div class="start d-flex gap-2">
-                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
-                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
-                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
-                    <span class="text-warning"><i class="fa-solid fa-star"></i></span>
-                    <span class="text-warning"><i class="fa-solid fa-star-half"></i></span>
-                  </div>
-                  <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, inventore aperiam?
-                    Pariatur
-                    natus ipsam, ipsa quo tempora eum dolor temporibus, et expedita omnis laboriosam nihil veniam sint
-                    facere rerum modi.</p>
-                </div>
-                <div class="testimonial-card d-flex flex-column gap-3">
-                  <div class="profile d-flex align-items-center">
-                    <img src="./demo-img/faveIconeImg.png" alt="images">
-                    <div class="d-flex flex-column gap-2">
-                      <h4 class="name text-uppercase">Md. Mithon Ali</h4>
-                      <p class="title text-capitalize">react Developer</p>
+                      <h4 class="name text-uppercase">Soad Mahamud</h4>
+                      <p class="title text-capitalize">web Developer</p>
                     </div>
                   </div>
                   <div class="start d-flex gap-2">
@@ -586,7 +522,7 @@
                 <textarea id="message" class="form-control py-3" rows="7" placeholder="Message"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-success py-3 w-25">Send Message</button>
+              <button type="submit" class="btn py-4 w-25">Send Message</button>
             </form>
           </div>
         </div>
@@ -685,7 +621,7 @@
 
   <!-- ==================== js file ==================== -->
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <!-- owl carosel -->
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/app.js"></script>

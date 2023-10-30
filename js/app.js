@@ -1,21 +1,9 @@
-// Header Start ==========================
-const toggleOpenBtn = document.getElementById("toggleOpenBtn");
-const toggleCloseBtn = document.getElementById("toggleCloseBtn");
-
-toggleOpenBtn.addEventListener("click", function () {
-  toggleOpenBtn.style.display = "none";
-  toggleCloseBtn.style.display = "block";
-  console.log("open button");
-});
-
-toggleCloseBtn.addEventListener("click", function () {
-  toggleCloseBtn.style.display = "none";
-  toggleOpenBtn.style.display = "block";
-  console.log("close button");
-});
-// Header Ends ==========================
-
-
+function openNav (){
+  document.getElementById("myNav").style.width = "60%";
+}
+function closeNav (){
+  document.getElementById("myNav").style.width = "0%";
+}
 
 // Testimonial Slider Funcation Start =============================
 let testimonialSlider = document.getElementById('testimonial-slider');
@@ -83,7 +71,7 @@ owl.owlCarousel({
       items: 2
     },
     1000: {
-      items: 4
+      items: 3
     }
   }
 });
